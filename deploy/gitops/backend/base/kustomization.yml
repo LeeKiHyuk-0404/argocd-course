@@ -3,4 +3,8 @@ kind: Kustomization
 resources:
 - deployment.yml
 - service.yml
+images:
+- name: humancat-backend-image
+  newName: busybox
+  newTag: 1.35.0
 namespace: gitops
